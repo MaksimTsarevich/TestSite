@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maksim & Aleksandra Wedding</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+    rel="stylesheet">
+
+  <!-- simplyCountdown -->
+  <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+  <script src="countdown/simplyCountdown.min.js"></script>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section id="hero"
+    class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+    <main>
+      <h1><span>Wedding</span></h1>
+      <h1>Maksim & Aleksandra</h1>
+      <p>Торжественная церемония нашей свадьбы состоится через:</p>
+      <div class="simply-countdown"></div>
+      <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">Посмотреть приглашение</a>
+    </main>
+
+  </section>
+
+  <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">Dino</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Dino</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#info">Info</a>
+            <a class="nav-link" href="#story">Story</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#rsvp">RSVP</a>
+            <a class="nav-link" href="#gifts">Gifts</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="home">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2>Свадебное торжество</h2>
+          <h3>Состоится 20 августа 2026 года в "Усадьба Моринское".</h3>
+          <p>В связи с этим мы хотели бы пригласить Вас, уважаемые друзья, на нашу свадьбу.</p>
+        </div>
+      </div>
+
+      <div class="row couple">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-8 text-end">
+              <h3>Maksim</h3>
+              <p>Максим — человек с сильной волей и оптимистичным взглядом на жизнь. Он всегда придерживается принципа, что любой трудный момент можно преодолеть, если сохранять спокойствие и верить в успех.</p>
+              <p>Его поддержка и решительность вдохновляют всех, кто его окружает.</p>
+            </div>
+            <div class="col-4">
+              <img src="img/maksimphot1.jpg" alt="Maksim" class="img-responsive rounded-circle">
+            </div>
+          </div>
+        </div>
+
+        <span class="heart"><i class="bi bi-heart-fill"></i></span>
+
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-4">
+              <img src="img/sanyaphot3.jpg" alt="Nofariza" class="img-responsive rounded-circle">
+            </div>
+            <div class="col-8">
+              <h3>Aleksandra</h3>
+              <p>Александра — душа компании и источник вдохновения для всех вокруг. Она искренняя, открытая и всегда находит время для того, чтобы выслушать и поддержать.</p>
+
+              <p>Её эмпатия и умение находить общий язык с людьми делают её не только хорошим другом, но и надежным партнёром в любом деле.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="info" class="info">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <h2>Информация о нашем торжестве</h2>
+          <p class="alamat">Усадьба Моринское<br>д. Морино, ул. Центральная, 185</p>
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9410.778264133465!2d25.67015137653806!3d53.86607898908601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46de91593ae9208b%3A0x7bd858c7707ec23c!2z0JDQs9GA0L7Rg9GB0LDQtNGM0LHQsCAi0JzQvtGA0LjQvdGB0LrQvtC1Ig!5e0!3m2!1sru!2sby!4v1740556677731!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9410.778264133465!2d25.67015137653806!3d53.86607898908601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46de91593ae9208b%3A0x7bd858c7707ec23c!2z0JDQs9GA0L7Rg9GB0LDQtNGM0LHQsCAi0JzQvtGA0LjQvdGB0LrQvtC1Ig!5e0!3m2!1sru!2sby!4v1740556677731!5m2!1sru!2sby"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/PJPPXHab1Q2kTv9k6" target="_blank" class="btn btn-light btn-sm my-3">Нажмите, чтобы открыть карту</a>
+          <p class="description">Просим обратить внимание на правильность адреса и даты. Если, прибыв на место, вы не найдете признаков проведения свадьбы, возможно, вы ошиблись в дате или месте.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-5 col-10">
+          <div class="card text-center text-bg-light mb-5">
+            <div class="card-header">Церемония бракосочетания</div>
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <i class="bi bi-clock d-block"></i>
+                  <span>14.00 - 15.00</span>
+                </div>
+                <div class="col-md-6">
+                  <i class="bi bi-calendar3 d-block"></i>
+                  <span>Суббота, 20 Августа 2026</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              Во время церемонии бракосочетания просьба не забывать о хорошем настроении и радости — пусть этот день будет полон смеха и счастья!
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10">
+          <div class="card text-center text-bg-light">
+            <div class="card-header">свадебный прием</div>
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <i class="bi bi-clock d-block"></i>
+                  <span>11:00 — до окончания.</span>
+                </div>
+                <div class="col-md-6">
+                  <i class="bi bi-calendar3 d-block"></i>
+                  <span>Суббота, 20 Августа 2026</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              После церемонии приглашаем на свадебный прием! Ждем вас с улыбками и отличным настроением!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="story" class="story">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <span> </span>
+          <h2>Наши моменты
+          </h2>
+          <p>Мы встретились случайно, но каждый момент вместе стал важным. Время шло, и наша связь становилась крепче, а путь, который мы прошли, привел нас к этому важному моменту.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image" style="background-image: url(img/sman23.jpg);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Когда наши пути пересеклись</h3>
+                  <span>1 января 2000</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Хотя мы были знакомы уже долгое время, настоящая история началась не сразу. Иногда нужно время, чтобы понять, что рядом с тобой тот, с кем ты хочешь провести всю жизнь.
+                  </p>
+                </div>
+              </div>
+
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url(https://picsum.photos/300/300);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Начали серьезно</h3>
+                  <span>1 января 2005</span>
+                </div>
+                <div class="timeline-body">
+                  <p>В этот день мы решили, что пришло время двигаться вперед вместе. Это было начало нового этапа, когда наши отношения стали гораздо более значимыми и осознанными.
+                  </p>
+                </div>
+              </div>
+
+            </li>
+            <li>
+              <div class="timeline-image" style="background-image: url(https://picsum.photos/301/301);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Предложение</h3>
+                  <span>14 февраля 2024</span>
+                </div>
+                <div class="timeline-body">
+                  В этот день мы приняли решение стать частью друг друга на всю жизнь, открывая новую главу в нашей совместной истории.
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <span>Память о нашей истории</span>
+          <h2>Фотогалерея</h2>
+          <p>Мы рады поделиться с вами моментами, которые навсегда останутся в нашей памяти.</p>
+        </div>
+      </div>
+
+      <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+        <div class="col mt-3">
+          <a href="img/gallery/all1.jpg" data-toggle="lightbox" data-caption="Maksim & Aleksandra 1" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/all1.jpg" alt="Maksim & Aleksandra 1" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="img/gallery/all2.jpg" data-toggle="lightbox" data-caption="Maksim & Aleksandra 1" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/all2.jpg" alt="Maksim & Aleksandra 1" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="img/gallery/all3.jpg" data-toggle="lightbox" data-caption="Maksim & Aleksandra 1" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/all3.jpg" alt="Maksim & Aleksandra 1" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="img/gallery/all3.jpg" data-toggle="lightbox" data-caption="Maksim & Aleksandra 1" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/all3.jpg" alt="Maksim & Aleksandra 1" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="img/gallery/all1.jpg" data-toggle="lightbox" data-caption="Maksim & Aleksandra 1" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/all1.jpg" alt="Maksim & Aleksandra 1" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="img/gallery/all1.jpg" data-toggle="lightbox" data-caption="Maksim & Aleksandra 1" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/all1.jpg" alt="Maksim & Aleksandra 1" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="img/gallery/all2.jpg" data-toggle="lightbox" data-caption="Maksim & Aleksandra 1" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/all2.jpg" alt="Maksim & Aleksandra 1" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="img/gallery/all2.jpg" data-toggle="lightbox" data-caption="Maksim & Aleksandra 1" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/all2.jpg" alt="Maksim & Aleksandra 1" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="rsvp" class="rsvp">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <h2>Подтверждение присутствия</h2>
+          <p>Заполните форму ниже, чтобы подтвердить ваше присутствие.</p>
+        </div>
+      </div>
+
+      <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 9999;"></div>
+
+      <div id="loader" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <div class="spinner"></div>
+      </div>
+<!-- Кастомный алерт -->
+<div id="custom-alert" style="display: none; position: fixed; top: 20%; left: 50%; transform: translateX(-50%); width: 80%; max-width: 400px; background: #fff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; z-index: 9999;">
+  <div id="alert-message" style="font-size: 18px; margin-bottom: 15px;"></div>
+  <button id="alert-close-btn" style="background-color: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Закрыть</button>
+</div>
+
+<!-- авпвапвапавпавпвапавпвпва -->
+      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
+        action="https://script.google.com/macros/s/AKfycbzM_zNNrJSytXRiGojZPb1uK4QNCObwEw1GfYXTTj_BEPDXdaW9zz1T0EabIQ2AFpYUeg/exec"
+        id="my-form">
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="nama" class="form-label">Имя</label>
+            <input type="text" class="form-control" id="nama" name="nama">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="jumlah" class="form-label">Количество</label>
+            <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="status" class="form-label">Подтверждение</label>
+            <select name="status" id="status" class="form-select">
+              <option selected>Выберите один вариант</option>
+              <option value="Присутствую">Присутствую</option>
+              <option value="Не присутствую">Не присутствую</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12" style="margin-top: 35px;">
+          <button class="btn btn-primary">Отправить</button>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <section id="gifts" class="gifts">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <span>Есть ли у вас какие-либо вопросы или пожелания?</span>
+          <h2>Связь с нами</h2>
+          <p>Для дополнительной информации, пожалуйста, свяжитесь с нами по следующим контактам:
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-center">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="fw-bold">Контакт Жениха</div>
+              Телефон: 123-456-789 
+            </li>
+            <li class="list-group-item">
+              <div class="fw-bold">Контакт Невесты</div>
+              Телефон: 123-456-789 
+            </li>
+            <li class="list-group-item">
+              <div class="fw-bold">Контакт Организатора</div>
+              Телефон: 123-456-789 
+            <!-- </li>
+            <li class="list-group-item"> -->
+              <div class="fw-bold">Telegram</div>
+              <img src="img/saweria.png" alt="Saweria QR" class="img-thumbnail" width="150">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <small class="block">&copy; 2023 DiNo Wedding. All Rights Reserved.</small>
+          <small class="block">Design by <a href="https://instagram.com/sandhikagalih">@sandhikagalih</a>.</small>
+
+          <ul class="mt-3">
+            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+  <script>
+    simplyCountdown('.simply-countdown', {
+      year: 2026, // required
+      month: 8, // required
+      day: 15, // required
+      hours: 11, // Default is 0 [0-23] integer
+      words: { //words displayed into the countdown
+        days: { singular: 'дней', plural: 'дней' },
+        hours: { singular: 'часов', plural: 'часов' },
+        minutes: { singular: 'минут', plural: 'минут' },
+        seconds: { singular: 'секунд', plural: 'секунд' }
+      },
+    });
+  </script>
+
+  <script>
+    const stickyTop = document.querySelector('.sticky-top');
+    const offcanvas = document.querySelector('.offcanvas');
+
+    offcanvas.addEventListener('show.bs.offcanvas', function () {
+      stickyTop.style.overflow = 'visible';
+    });
+
+    offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+      stickyTop.style.overflow = 'hidden';
+    });
+
+  </script>
+
+  <script>
+    const rootElement = document.querySelector(":root");
+    const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+    const audioIcon = document.querySelector('.audio-icon-wrapper i');
+    const song = document.querySelector('#song');
+    let isPlaying = false;
+
+    function disableScroll() {
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+      window.onscroll = function () {
+        window.scrollTo(scrollTop, scrollLeft);
+      }
+
+      rootElement.style.scrollBehavior = 'auto';
+    }
+
+    function enableScroll() {
+      window.onscroll = function () { }
+      rootElement.style.scrollBehavior = 'smooth';
+      // localStorage.setItem('opened', 'true');
+      // playAudio();
+    }
+
+    function playAudio() {
+      song.volume = 0.1;
+      audioIconWrapper.style.display = 'flex';
+      song.play();
+      isPlaying = true;
+    }
+
+    audioIconWrapper.onclick = function () {
+      if (isPlaying) {
+        song.pause();
+        audioIcon.classList.remove('bi-disc');
+        audioIcon.classList.add('bi-pause-circle');
+      } else {
+        song.play();
+        audioIcon.classList.add('bi-disc');
+        audioIcon.classList.remove('bi-pause-circle');
+      }
+
+      isPlaying = !isPlaying;
+    }
+
+    // if (!localStorage.getItem('opened')) {
+    //   disableScroll();
+    // }
+    //disableScroll();
+  </script>
+  <script>
+//     window.addEventListener("load", function () {
+//   const form = document.getElementById('my-form');
+//   const loader = document.getElementById('loader'); // Индикатор загрузки
+  
+//   form.addEventListener("submit", function (e) {
+//     e.preventDefault();
+
+//     // Показываем индикатор загрузки
+//     loader.style.display = "block";
+
+//     const data = new FormData(form);
+//     const action = e.target.action;
+
+//     fetch(action, {
+//       method: 'POST',
+//       body: data,
+//     })
+//       .then(() => {
+//         // Скрываем индикатор загрузки
+//         loader.style.display = "none";
+        
+//         // Показываем успешное уведомление
+//         alert("Konfirmasi kehadiran berhasil terkirim!");
+//       })
+//       .catch((error) => {
+//         // В случае ошибки скрываем индикатор загрузки и выводим сообщение
+//         loader.style.display = "none";
+//         alert("Произошла ошибка при отправке данных!");
+//       });
+//   });
+// });
+
+window.addEventListener("load", function () {
+  const form = document.getElementById('my-form');
+  const loader = document.getElementById('loader'); // Индикатор загрузки
+  const overlay = document.getElementById('overlay'); // Затемняющий слой
+  const customAlert = document.getElementById('custom-alert'); // Кастомный алерт
+  const alertMessage = document.getElementById('alert-message'); // Сообщение в алерте
+  const alertCloseBtn = document.getElementById('alert-close-btn'); // Кнопка закрытия
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Показываем индикатор загрузки и затемняющий слой
+    loader.style.display = "block";
+    overlay.style.display = "block";  // Показываем затемнение
+
+    const data = new FormData(form);
+    const action = e.target.action;
+
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+      .then(() => {
+        // Скрываем индикатор загрузки и затемняющий слой
+        loader.style.display = "none";
+        overlay.style.display = "none"; // Скрываем затемнение
+
+        // Показываем кастомный алерт с успешным сообщением
+        alertMessage.textContent = "Подтверждение участия успешно отправлено!";
+        customAlert.style.display = "block"; // Показываем кастомный алерт
+      })
+      .catch((error) => {
+        // В случае ошибки скрываем индикатор загрузки и затемняющий слой, выводим сообщение
+        loader.style.display = "none";
+        overlay.style.display = "none"; // Скрываем затемнение
+
+        // Показываем кастомный алерт с ошибкой
+        alertMessage.textContent = "Произошла ошибка при отправке данных!";
+        customAlert.style.display = "block"; // Показываем кастомный алерт
+      });
+  });
+
+  // Обработчик для закрытия кастомного алерта
+  alertCloseBtn.addEventListener("click", function () {
+    customAlert.style.display = "none"; // Скрываем кастомный алерт
+  });
+});
+
+
+
+
+// window.addEventListener("load", function () {
+//   const form = document.getElementById('my-form');
+//   const loader = document.getElementById('loader'); // Индикатор загрузки
+//   const overlay = document.getElementById('overlay'); // Затемняющий слой
+
+//   form.addEventListener("submit", function (e) {
+//     e.preventDefault();
+
+//     // Показываем индикатор загрузки и затемняющий слой
+//     loader.style.display = "block";
+//     overlay.style.display = "block";  // Показываем затемнение
+
+//     const data = new FormData(form);
+//     const action = e.target.action;
+
+//     fetch(action, {
+//       method: 'POST',
+//       body: data,
+//     })
+//       .then(() => {
+//         // Скрываем индикатор загрузки и затемняющий слой
+//         loader.style.display = "none";
+//         overlay.style.display = "none"; // Скрываем затемнение
+        
+//         // Показываем успешное уведомление
+//         alert("Подтверждение участия успешно отправлено!");
+//       })
+//       .catch((error) => {
+//         // В случае ошибки скрываем индикатор загрузки и затемняющий слой, выводим сообщение
+//         loader.style.display = "none";
+//         overlay.style.display = "none"; // Скрываем затемнение
+//         alert("Произошла ошибка при отправке данных!");
+//       });
+//   });
+// });
+    // window.addEventListener("load", function () {
+    //   const form = document.getElementById('my-form');
+    //   form.addEventListener("submit", function (e) {
+    //     e.preventDefault();
+    //     const data = new FormData(form);
+    //     const action = e.target.action;
+    //     fetch(action, {
+    //       method: 'POST',
+    //       body: data,
+    //     })
+    //       .then(() => {
+    //         alert("Подтверждение участия успешно отправлено!");
+    //       })
+    //   });
+    // });
+
+  </script>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama = urlParams.get('n') || '';
+    const pronoun = urlParams.get('p') || 'Wedding';
+    const namaContainer = document.querySelector('.hero h4 span');
+    namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, '');
+
+    document.querySelector('#nama').value = nama;
+  </script>
+</body>
+
+</html>
